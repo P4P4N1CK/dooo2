@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "661768716004",
+    "project_id": "flixone-6a2a6",
+    "storage_bucket": "flixone-6a2a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661768716004:android:4959f24f3b338ebbcfb6f1",
+        "android_client_info": {
+          "package_name": "com.dooo.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0M7S7TcwCNRRfgR2hM93t3eJE-dbHOSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

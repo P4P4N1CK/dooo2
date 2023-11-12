@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="track_selection_title">Parçayı Değiştir</string>
+    <string name="share_app_text">Hey, En Yeni Filmleri ve Web Dizilerini İzlemek İçin Bu Uygulamayı İndirin! Buradan İndirin: [YOUR_URL_HERE]</string>
+    <string name="wifiOnly">Yalnızca WiFi</string>
+    <string name="delete_title">Silmek istediğine emin misin %1$s?</string>
+    <string name="Explore_Your_Favourite_Content">Favori İçeriğinizi Keşfedin</string>
+    <string name="Welcome_to">Hoşgeldiniz</string>
+    <string name="Community">Toplum</string>
+    <string name="Forgot_Password">Parolanızı mı unuttunuz?</string>
+    <string name="Hello">Merhaba</string>
+    <string name="Guest">Konuk</string>
+    <string name="Please_Enter_Your_Details_To_Join_Our_Community">Lütfen \nTopluluğumuza Katılmak İçin Bilgilerinizi Girin</string>
+    <string name="Live_TV">Canlı tv</string>
+    <string name="Continue_Playing">Oynamaya Devam Et</string>
+    <string name="Most_Popular_Movies">En Popüler Filmler</string>
+    <string name="Most_Popular_WebSeries">En Popüler Web Dizileri</string>
+    <string name="Movies_Only_For_You">Sadece Sizin İçin Filmler</string>
+    <string name="WebSeries_Only_For_You">Sadece Sizin İçin Web Dizisi</string>
+    <string name="Recently_Added_Movies">Son Eklenen Filmler</string>
+    <string name="Recently_Added_Web_Series">Son Eklenen Web Dizileri</string>
+    <string name="Movies">Filmler</string>
+    <string name="Web_Series">Web Serisi</string>
+    <string name="Home_Menu">Home</string>
+    <string name="Search_Menu">Arama</string>
+    <string name="Movies_Menu">Filmler</string>
+    <string name="Series_Menu">Dizi</string>
+    <string name="Account_Menu">Hesap</string>
+</resources>

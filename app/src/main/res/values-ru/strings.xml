@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="track_selection_title">Изменить трек</string>
+    <string name="share_app_text">Эй, загрузите это приложение, чтобы смотреть последние фильмы и веб-сериалы! Скачать здесь: [YOUR_URL_HERE]</string>
+    <string name="wifiOnly">Только WiFi</string>
+    <string name="delete_title">Вы действительно хотите удалить% 1 $ s?</string>
+    <string name="Explore_Your_Favourite_Content">Исследуйте свой любимый контент</string>
+    <string name="Welcome_to">Добро пожаловать в</string>
+    <string name="Community">Сообщество</string>
+    <string name="Forgot_Password">Забыл пароль?</string>
+    <string name="Hello">Привет</string>
+    <string name="Guest">Гость</string>
+    <string name="Please_Enter_Your_Details_To_Join_Our_Community">Пожалуйста, введите свои данные, чтобы присоединиться к нашему сообществу</string>
+    <string name="Live_TV">Прямой эфир</string>
+    <string name="Continue_Playing">Продолжить игру</string>
+    <string name="Most_Popular_Movies">Самые популярные фильмы</string>
+    <string name="Most_Popular_WebSeries">Самые популярные веб-серии</string>
+    <string name="Movies_Only_For_You">Фильмы только для тебя</string>
+    <string name="WebSeries_Only_For_You">WebSeries только для вас</string>
+    <string name="Recently_Added_Movies">Недавно добавленные фильмы</string>
+    <string name="Recently_Added_Web_Series">Недавно добавленные веб-серии</string>
+    <string name="Movies">Фильмы</string>
+    <string name="Web_Series">Веб-серия</string>
+    <string name="Home_Menu">Дом</string>
+    <string name="Search_Menu">Поиск</string>
+    <string name="Movies_Menu">Фильмы</string>
+    <string name="Series_Menu">Серии</string>
+    <string name="Account_Menu">Счет</string>
+</resources>

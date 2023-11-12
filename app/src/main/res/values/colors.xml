@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Deep_Yellow">#FCF83E</color>
+    <color name="Yellow">#FFC801</color>
+
+    <color name="Gray">#DBDCDB</color>
+
+    <color name="Blue">#4c5cd5</color>
+
+    <color name="Primary">#090911</color>
+
+    <color name="TitleBar_BG">#090911</color>
+    <color name="Screen_Background">#090911</color>
+
+    <color name="Splash_TitleBar_BG">#090911</color>
+    <color name="Splash_Background">#090911</color>
+
+    <color name="Home_TitleBar_BG">#090911</color>
+    <color name="Home_Background">#090911</color>
+
+    <color name="login_signup_TitleBar_BG">#090911</color>
+    <color name="login_signup_Background">#090911</color>
+
+    <color name="Non_Selected">#9C9C9E</color>
+    <color name="Selected">#FFFFFFFF</color>
+
+    <color name="Gray_Smooth">#9B9A9F</color>
+
+    <color name="Red_Smooth">#DF4674</color>
+    <color name="Black_Smooth">#10101e</color>
+
+    <color name="Deep_Red">#EE2E47</color>
+
+    <color name="Orange_Smooth">#ee727e</color>
+
+    <color name="w_Dark">#10101e</color>
+
+    <color name="Grediant_Red_1">#DE4D84</color>
+    <color name="Grediant_Red_2">#E24E5A</color>
+</resources>

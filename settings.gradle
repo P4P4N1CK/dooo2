@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name = "Dooo"
+include ':nativetemplates'
+include ':liquid_swipe'

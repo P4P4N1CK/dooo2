@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="track_selection_title">ट्रैक बदलें</string>
+    <string name="wifiOnly">केवल वाईफाई</string>
+    <string name="share_app_text">अरे, नवीनतम फिल्में और वेबसीरीज देखने के लिए इस ऐप को डाउनलोड करें! यहां डाउनलोड करें: [Your_URL_HERE]</string>
+    <string name="delete_title">क्या आप वाकई %1$s को हटाना चाहते हैं?</string>
+    <string name="Explore_Your_Favourite_Content">अपनी पसंदीदा सामग्री का अन्वेषण करें</string>
+    <string name="Welcome_to">में स्वागत</string>
+    <string name="Community">समुदाय</string>
+    <string name="Forgot_Password">पासवर्ड भूल गए?</string>
+    <string name="Hello">नमस्ते</string>
+    <string name="Guest">अतिथि</string>
+    <string name="Please_Enter_Your_Details_To_Join_Our_Community">हमारे समुदाय में शामिल होने के लिए कृपया अपना विवरण दर्ज करें</string>
+    <string name="Live_TV">लाइव टीवी</string>
+    <string name="Continue_Playing">खेलना जारी रखें</string>
+    <string name="Most_Popular_Movies">सबसे लोकप्रिय फिल्में</string>
+    <string name="Most_Popular_WebSeries">सर्वाधिक लोकप्रिय वेबसीरीज</string>
+    <string name="Movies_Only_For_You">मूवी ओनली फॉर यू</string>
+    <string name="WebSeries_Only_For_You">वेबसीरीज ओनली फॉर यू</string>
+    <string name="Recently_Added_Movies">हाल ही में जोड़ी गई फिल्में</string>
+    <string name="Recently_Added_Web_Series">हाल ही में जोड़ी गई वेब सीरीज</string>
+    <string name="Movies">चलचित्र</string>
+    <string name="Web_Series">वेब सीरीज</string>
+    <string name="Home_Menu">घर</string>
+    <string name="Search_Menu">खोज</string>
+    <string name="Movies_Menu">चलचित्र</string>
+    <string name="Series_Menu">टीवी शो</string>
+    <string name="Account_Menu">खाता</string>
+</resources>

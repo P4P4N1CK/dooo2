@@ -1,0 +1,52 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        gradlePluginPortal()
+        mavenCentral()
+        maven { url 'https://artifacts.applovin.com/android' }
+        maven {url 'https://android-sdk.is.com/'}
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.2'
+
+        classpath 'com.google.gms:google-services:4.4.0'
+
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.13.4, 0.99.99]'
+
+        classpath "com.applovin.quality:AppLovinQualityServiceGradlePlugin:+"
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.20-Beta'
+
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.9'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven {
+            url  "https://cardinalcommerceprod.jfrog.io/artifactory/android"
+            credentials {
+                username 'paypal_sgerritz'
+                password 'AKCp8jQ8tAahqpT5JjZ4FRP2mW7GMoFZ674kGqHmupTesKeAY2G8NcmPKLuTxTGkKjDLRzDUQ'
+            }
+        }
+        maven {
+            url  "https://phonepe.mycloudrepo.io/public/repositories/phonepe-intentsdk-android"
+        }
+        maven {
+            url "https://artifactory.paytm.in/libs-release-local"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

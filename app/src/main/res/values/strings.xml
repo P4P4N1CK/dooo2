@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name" translatable="false">Dooo</string>
+
+    <string name="track_selection_title">Change Track</string>
+
+    <string name="share_app_text">Hey, Download This App To Watch Latest Movies and WebSeries! Download Here: [YOUR_URL_HERE]</string>
+
+    <string name="wifiOnly">Download Over WiFi Only</string>
+
+    <string name="percent_progress" translatable="false">%1$d%%</string>
+    <string name="download_eta_sec" translatable="false">%1$ds left</string>
+    <string name="download_eta_min" translatable="false">%1$dm %2$ds left</string>
+    <string name="download_eta_hrs" translatable="false">%1$dh %2$dm %3$ds left</string>
+    <string name="download_speed_bytes" translatable="false">%1$d B/s</string>
+    <string name="download_speed_kb" translatable="false">%1$s KB/s</string>
+    <string name="download_speed_mb" translatable="false">%1$s MB/s</string>
+
+
+    <!-- Edit These For your Ad Network -->
+    <string name="admob_application_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string> <!-- AdMob -->
+    <string name="startapp_app_id" translatable="false">209411604</string> <!-- StartApp -->
+    <string name="facebook_app_id" translatable="false">[APP_ID]</string> <!-- Facebook -->
+    <string name="applovin_sdk_key" translatable="false">XJN4GGfoouR0ry-ZzbBJdb-Vez7ImciQJtenhxKkZ06qryKJvDaM_GGGMbyTF-7z9-MhihRO-cHCeZc2lJVdc_</string> <!-- Applovin -->
+
+
+    <string name="delete_title">Are you sure you want to delete %1$s?</string>
+
+
+    <string name="Explore_Your_Favourite_Content">Explore Your Favourite Content</string>
+    <string name="Welcome_to">Welcome to</string>
+    <string name="Community">Community</string>
+    <string name="Forgot_Password">Forgot Password?</string>
+    <string name="Hello">Hello</string>
+    <string name="Guest">Guest</string>
+    <string name="Please_Enter_Your_Details_To_Join_Our_Community">Please Enter Your Details To  Join Our Community</string>
+    <string name="Live_TV">Live TV</string>
+    <string name="Continue_Playing">Continue Playing</string>
+    <string name="Most_Popular_Movies">Most Popular Movies</string>
+    <string name="Most_Popular_WebSeries">Most Popular WebSeries</string>
+    <string name="Movies_Only_For_You">Movies Only For You</string>
+    <string name="WebSeries_Only_For_You">WebSeries Only For You</string>
+    <string name="Recently_Added_Movies">Recently Added Movies</string>
+    <string name="Recently_Added_Web_Series">Recently Added Web Series</string>
+    <string name="Movies">Movies</string>
+    <string name="Web_Series">Web Series</string>
+    <string name="Home_Menu">Home</string>
+    <string name="Search_Menu">Search</string>
+    <string name="Movies_Menu">Movies</string>
+    <string name="Series_Menu">Series</string>
+    <string name="Account_Menu">Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

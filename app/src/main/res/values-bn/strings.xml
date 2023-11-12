@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="track_selection_title">ট্র্যাক পরিবর্তন করুন</string>
+    <string name="share_app_text">আরে, সর্বশেষ সিনেমা এবং ওয়েব সিরিজ দেখতে এই অ্যাপটি ডাউনলোড করুন! এখানে ডাউনলোড করুন: [YOUR_URL_HERE]</string>
+    <string name="wifiOnly">শুধুমাত্র ওয়াইফাই</string>
+    <string name="delete_title">আপনি কি নিশ্চিত যে আপনি %1 $ s মুছে ফেলতে চান?</string>
+    <string name="Explore_Your_Favourite_Content">আপনার প্রিয় বিষয়বস্তু অন্বেষণ করুন</string>
+    <string name="Welcome_to">স্বাগতম</string>
+    <string name="Community">সম্প্রদায়</string>
+    <string name="Forgot_Password">পাসওয়ার্ড ভুলে গেছেন?</string>
+    <string name="Hello">হ্যালো</string>
+    <string name="Guest">অতিথি</string>
+    <string name="Please_Enter_Your_Details_To_Join_Our_Community">আমাদের কমিউনিটিতে যোগদানের জন্য দয়া করে আপনার বিবরণ লিখুন</string>
+    <string name="Live_TV">সরাসরি সম্প্রচার</string>
+    <string name="Continue_Playing">খেলা চালিয়ে যান</string>
+    <string name="Most_Popular_Movies">সর্বাধিক জনপ্রিয় সিনেমা</string>
+    <string name="Most_Popular_WebSeries">সবচেয়ে জনপ্রিয় ওয়েব সিরিজ</string>
+    <string name="Movies_Only_For_You">সিনেমা শুধুমাত্র আপনার জন্য</string>
+    <string name="WebSeries_Only_For_You">শুধুমাত্র আপনার জন্য ওয়েব সিরিজ</string>
+    <string name="Recently_Added_Movies">সম্প্রতি যোগ করা সিনেমা</string>
+    <string name="Recently_Added_Web_Series">সম্প্রতি যোগ করা ওয়েব সিরিজ</string>
+    <string name="Movies">সিনেমা</string>
+    <string name="Web_Series">ওয়েব সিরিজ</string>
+    <string name="Home_Menu">বাড়ি</string>
+    <string name="Search_Menu">অনুসন্ধান করুন</string>
+    <string name="Movies_Menu">সিনেমা</string>
+    <string name="Series_Menu">সিরিজ</string>
+    <string name="Account_Menu">একাউন্ট</string>
+</resources>

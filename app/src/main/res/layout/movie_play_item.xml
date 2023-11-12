@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="0dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/movie_link_card">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/movie_play_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grediant_link_item_bg">
+
+        <TextView
+            android:id="@+id/movie_link_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="2dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/Premium_Tag"
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/premiumtag_rounded_bg"
+            android:gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/movie_link_name"
+            app:layout_constraintStart_toEndOf="@+id/movie_link_name"
+            app:layout_constraintTop_toTopOf="@+id/movie_link_name">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/crown" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/movie_link_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quality"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/movie_link_name"
+            app:layout_constraintTop_toBottomOf="@+id/movie_link_name" />
+
+        <TextView
+            android:id="@+id/movie_link_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=", size"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/movie_link_quality"
+            app:layout_constraintTop_toBottomOf="@+id/movie_link_name" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/play_button_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="track_selection_title">Cambiar de pista</string>
+    <string name="share_app_text">¡Oye, descarga esta aplicación para ver las últimas películas y series web! Descargar aquí: [YOUR_URL_HERE]</string>
+    <string name="wifiOnly">Sólo wifi</string>
+    <string name="delete_title">¿Estás seguro de que quieres eliminar% 1 $ s?</string>
+    <string name="Explore_Your_Favourite_Content">Explore su contenido favorito</string>
+    <string name="Welcome_to">Bienvenido a</string>
+    <string name="Community">Comunidad</string>
+    <string name="Forgot_Password">¿Has olvidado tu contraseña?</string>
+    <string name="Hello">Hola</string>
+    <string name="Guest">Invitado</string>
+    <string name="Please_Enter_Your_Details_To_Join_Our_Community">Ingrese sus datos para unirse a nuestra comunidad</string>
+    <string name="Live_TV">Televisión en vivo</string>
+    <string name="Continue_Playing">Continuar jugando</string>
+    <string name="Most_Popular_Movies">Películas más populares</string>
+    <string name="Most_Popular_WebSeries">WebSeries más populares</string>
+    <string name="Movies_Only_For_You">Películas solo para ti</string>
+    <string name="WebSeries_Only_For_You">WebSeries solo para ti</string>
+    <string name="Recently_Added_Movies">Películas agregadas recientemente</string>
+    <string name="Recently_Added_Web_Series">Serie web agregada recientemente</string>
+    <string name="Movies">Serie web agregada recientemente</string>
+    <string name="Web_Series">Serie web</string>
+    <string name="Home_Menu">Hogar</string>
+    <string name="Search_Menu">Buscar</string>
+    <string name="Movies_Menu">Películas</string>
+    <string name="Series_Menu">Serie</string>
+    <string name="Account_Menu">Cuenta</string>
+</resources>

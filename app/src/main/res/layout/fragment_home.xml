@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment"
+    android:background="@color/Screen_Background"
+    android:fitsSystemWindows="true">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/Home_Swipe_Refresh_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:layout_editor_absoluteX="190dp"
+            tools:layout_editor_absoluteY="277dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/ViewPagerImageSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/dooo_logo_no_bg_red"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/allMoviesText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:text="Movie"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                        app:layout_constraintStart_toEndOf="@+id/imageView8"
+                        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+                    <TextView
+                        android:id="@+id/allSeriesText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:text="Series"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/allMoviesText"
+                        app:layout_constraintStart_toEndOf="@+id/allMoviesText"
+                        app:layout_constraintTop_toTopOf="@+id/allMoviesText" />
+
+                    <TextView
+                        android:id="@+id/allLiveTvText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:text="Live TV"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/allSeriesText"
+                        app:layout_constraintStart_toEndOf="@+id/allSeriesText"
+                        app:layout_constraintTop_toTopOf="@+id/allSeriesText" />
+
+                    <LinearLayout
+                        android:id="@+id/homeSearchTag"
+                        android:layout_width="33dp"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/comment_tag_bg"
+                        android:gravity="center"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/homeSearchTagIcon"
+                            android:layout_width="28dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/search"
+                            app:tint="@color/white"/>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ad_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/custom_banner_ad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:id="@+id/admob_nativead_template_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+                        <com.google.android.ads.nativetemplates.TemplateView
+                            android:id="@+id/admob_native_template"
+                            app:gnt_template_type="@layout/gnt_small_template_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ad_View_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/LivetvgenreLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/live_tv_genre_list_Recycler_View"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/LiveTV_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/LiveTVSmallCardPalate"
+                            android:layout_width="5dp"
+                            android:layout_height="40dp"
+                            android:backgroundTint="@color/Red_Smooth"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Live_TV"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAlignment="viewStart"
+                            android:textSize="25sp"
+                            android:layout_marginStart="5dp"/>
+                        <ImageView
+                            android:id="@+id/More_Live_TV"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/list_text"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/home_Live_TV_list_Recycler_View"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/genreLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/genre_list_Recycler_View"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/resume_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/continuePlayingSmallCardPalate"
+                            android:layout_width="5dp"
+                            android:layout_height="40dp"
+                            android:backgroundTint="@color/Red_Smooth"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Continue_Playing"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAlignment="viewStart"
+                            android:textSize="25sp"
+                            android:layout_marginStart="5dp"/>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/clearContinuePlaying"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/ic_baseline_delete_sweep_24"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="?android:selectableItemBackground"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/continuePlaying_list_Recycler_View"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/popularMoviesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/mostPopularMoviesSmallCardPalate"
+                            android:layout_width="5dp"
+                            android:layout_height="40dp"
+                            android:backgroundTint="@color/Red_Smooth"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"/>
+                        <TextView
+                            android:id="@+id/popularMoviesTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Most_Popular_Movies"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAlignment="viewStart"
+                            android:textSize="25sp"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/home_popularMovies_list_Recycler_View"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/popularWebSeriesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/mostPopularWebseriesSmallCardPalate"
+                            android:layout_width="5dp"
+                            android:layout_height="40dp"
+                            android:backgroundTint="@color/Red_Smooth"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"/>
+                        <TextView
+                            android:id="@+id/popularWebSeriesTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Most_Popular_WebSeries"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAlignment="viewStart"
+                            android:textSize="25sp"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/home_popularWebSeries_list_Recycler_View"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/bywMovieLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/moviesOnlyForYouSmallCardPalate"
+                            android:layout_width="5dp"
+                            android:layout_height="40dp"
+                            android:backgroundTint="@color/Red_Smooth"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"/>
+                        <TextView
+                            android:id="@+id/bywmTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Movies_Only_For_You"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAlignment="viewStart"
+                            android:textSize="25sp"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/home_bywm_list_Recycler_View"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/bywWebSeriesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/webseriesOnlyForYouSmallCardPalate"
+                            android:layout_width="5dp"
+                            android:layout_height="40dp"
+                            android:backgroundTint="@color/Red_Smooth"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"/>
+                        <TextView
+                            android:id="@+id/bywwsTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/WebSeries_Only_For_You"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAlignment="viewStart"
+                            android:textSize="25sp"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/home_bywws_list_Recycler_View"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/recentMoviesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/recentlyAddedMoviesSmallCardPalate"
+                            android:layout_width="5dp"
+                            android:layout_height="40dp"
+                            android:backgroundTint="@color/Red_Smooth"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Recently_Added_Movies"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAlignment="viewStart"
+                            android:textSize="25sp"
+                            android:layout_marginStart="5dp"/>
+                        <ImageView
+                            android:id="@+id/More_Recent_Movies"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/list_text"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/home_Recent_Movies_list_Recycler_View"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/recentWebSeriesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/recentlyAddedWebSeriesSmallCardPalate"
+                            android:layout_width="5dp"
+                            android:layout_height="40dp"
+                            android:backgroundTint="@color/Red_Smooth"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Recently_Added_Web_Series"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAlignment="viewStart"
+                            android:textSize="25sp"
+                            android:layout_marginStart="5dp"/>
+                        <ImageView
+                            android:id="@+id/More_Recent_Series"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/list_text"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/home_Recent_Series_list_Recycler_View"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/homeMovieLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/moviesSmallCardPalate"
+                            android:layout_width="5dp"
+                            android:layout_height="40dp"
+                            android:backgroundTint="@color/Red_Smooth"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Movies"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAlignment="viewStart"
+                            android:textSize="25sp"
+                            android:layout_marginStart="5dp"/>
+                        <ImageView
+                            android:id="@+id/More_Movies"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/list_text"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/home_Movie_list_Recycler_View"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/homeWebSeriesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/webSeriesSmallCardPalate"
+                            android:layout_width="5dp"
+                            android:layout_height="40dp"
+                            android:backgroundTint="@color/Red_Smooth"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Web_Series"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAlignment="viewStart"
+                            android:textSize="25sp"
+                            android:layout_marginStart="5dp"/>
+                        <ImageView
+                            android:id="@+id/More_WebSeries"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/list_text"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/home_Web_Series_list_Recycler_View"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/custom_footer_banner_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/banner_View_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

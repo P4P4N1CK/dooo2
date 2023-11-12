@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/message_in_a_bottle" />
+
+    <TextView
+        android:id="@+id/msgTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscription Required To Access Premium Contents"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/msgBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visit Website To Buy Premium Access Or Your Code bellow"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/Dialog_Close"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="end"
+        android:backgroundTint="@color/Red_Smooth"
+        android:drawableLeft="@drawable/close"
+        android:text="Dismiss"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="track_selection_title">更改轨道</string>
+    <string name="share_app_text">嘿，下载此应用程序以观看最新的电影和网络剧！在此处下载：[YOUR_URL_HERE]</string>
+    <string name="wifiOnly">仅限 WiFi</string>
+    <string name="delete_title">您确定要删除 %1$s 吗？</string>
+    <string name="Explore_Your_Favourite_Content">探索您最喜欢的内容</string>
+    <string name="Welcome_to">欢迎来到</string>
+    <string name="Community">社区</string>
+    <string name="Forgot_Password">忘记密码？</string>
+    <string name="Hello">你好</string>
+    <string name="Guest">客人</string>
+    <string name="Please_Enter_Your_Details_To_Join_Our_Community">请输入您的详细信息以加入我们的社区</string>
+    <string name="Live_TV">电视直播</string>
+    <string name="Continue_Playing">继续播放</string>
+    <string name="Most_Popular_Movies">最受欢迎的电影</string>
+    <string name="Most_Popular_WebSeries">最受欢迎的网络系列</string>
+    <string name="Movies_Only_For_You">只为你而看的电影</string>
+    <string name="WebSeries_Only_For_You">网络剧只为你</string>
+    <string name="Recently_Added_Movies">最近添加的电影</string>
+    <string name="Recently_Added_Web_Series">最近添加的网络系列</string>
+    <string name="Movies">电影</string>
+    <string name="Web_Series">网络系列</string>
+    <string name="Home_Menu">家</string>
+    <string name="Search_Menu">搜索</string>
+    <string name="Movies_Menu">电影</string>
+    <string name="Series_Menu">系列</string>
+    <string name="Account_Menu">帐户</string>
+</resources>
